@@ -1,0 +1,28 @@
+:root{--bg:#0b1020;--panel:#121a36;--border:#22305a;--text:#e6ecff;--muted:#9fb0ff;--accent:#7c9cff;--success:#35d49a;--danger:#ff6b6b}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Ubuntu,Arial; background:linear-gradient(180deg,#0b1020,#0e1430 60%,#0b1020); color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.brand{display:flex;gap:12px;align-items:center}
+.brand-badge{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,#7c9cff,#35d49a);box-shadow:0 0 0 2px #111, 0 6px 24px rgba(124,156,255,.35)}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:900px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.section-title{font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:12px;margin:0 0 8px}
+.input-row{display:flex;gap:10px;align-items:center}
+.button{background:#1a2452;color:#fff;border:1px solid var(--border);padding:10px 14px;border-radius:10px;cursor:pointer;transition:.15s; font-weight:600}
+.button:hover{transform:translateY(-1px); box-shadow:0 6px 20px rgba(124,156,255,.2)}
+.button.primary{background:linear-gradient(135deg,#384a9c,#7c9cff)}
+.input{background:#0c1332;color:#e6ecff;border:1px solid var(--border);padding:10px 12px;border-radius:10px;width:100%}
+.badge{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#0d1535;color:#cfe0ff;font-size:12px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.tag{padding:6px 10px;border-radius:999px;background:#0f1942;border:1px solid var(--border);color:#cfe0ff}
+.messages{display:flex;flex-direction:column;gap:8px;max-height:260px;overflow:auto;padding-right:6px}
+.msg{padding:10px;border-radius:10px;border:1px solid var(--border);background:#0c1434}
+.msg.me{border-color:#3a5eff;background:#0f1a4a}
+.small{color:#9fb0ff;font-size:12px}
+.video{width:100%;border-radius:10px;border:1px solid var(--border);background:#000}
+.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.status-on{background:var(--success)}
+.status-off{background:#666}
